@@ -5,6 +5,6 @@ interface ISubmitButtonProps {
 }
 
 const SubmitButton: React.FC<ISubmitButtonProps> = ({ children }) => {
-	return <button className={styles.Root}>{children}</button>;
+	return <button className={styles.root}>{children}</button>;
 };
 export default SubmitButton;

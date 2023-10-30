@@ -1,13 +1,18 @@
 @import 'src/styles/variables.scss';
 
-.root{
-  width: 100%;
+.root {
   padding: 6px 12px;
   border: 1px solid $color-font;
   border-radius: 4px;
   color: $color-font;
+  flex-grow: 1;
+  background-color: $color-bg-white;
+  border: $border;
+  border-radius: 6px;
+  box-shadow: $box-shadow;
+  outline: none;
 
-  &:focus::placeholder{
+  &:focus::placeholder {
     color: transparent;
   }
 }
