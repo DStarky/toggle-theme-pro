@@ -1,4 +1,4 @@
-import { useState, createContext, useEffect } from 'react';
+import { useState, createContext, useEffect, useContext } from 'react';
 
 // Ключ для localStorage
 
@@ -38,6 +38,16 @@ const getTheme = (): Themes => {
 
 // хук для темы
 
+const useTheme = () => {
+  const context = useContext(ThemeContext);
+
+  if (!context) {
+    throw new Error('Этот хук может использоваться только с ThemeContext')
+  }
+
+  return context;
+}
+
 // Сам компонент
 
 interface IThemeProps {
@@ -64,5 +74,5 @@ const Theme: React.FC<IThemeProps> = ({ children }) => {
 	);
 };
 
-
+export { useTheme };
 export default Theme;
