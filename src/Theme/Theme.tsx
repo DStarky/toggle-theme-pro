@@ -36,7 +36,7 @@ const getTheme = (): Themes => {
 	return theme as Themes;
 };
 
-// хук для темы
+// хук для темы - передаем текущую тему, функцию для изменения и список доступных
 
 const useTheme = () => {
   const context = useContext(ThemeContext);
