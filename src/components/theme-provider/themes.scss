@@ -6,13 +6,12 @@ body {
     rgba(255, 255, 255, 0.25) 0 1px 0 inset;
 }
 
-
-:root {}
-
 [data-theme='light'] {
   --color-bg: #e0e0e0;
+  --toggle-bg: black;
 }
 
 [data-theme='dark'] {
   --color-bg: #131313;
+  --toggle-bg: white;
 }

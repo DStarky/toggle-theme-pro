@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import 'normalize.css';
 
 import './index.css';
-import 'src/styles/themes.scss';
+import './components/theme-provider/themes.scss';
 
 import App from './components/App/App';
-import Theme from './Theme/Theme';
+import Theme from './components/theme-provider';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
