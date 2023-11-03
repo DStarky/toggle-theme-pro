@@ -39,14 +39,14 @@ const getTheme = (): Themes => {
 // хук для темы - передаем текущую тему, функцию для изменения и список доступных
 
 const useTheme = () => {
-  const context = useContext(ThemeContext);
+	const context = useContext(ThemeContext);
 
-  if (!context) {
-    throw new Error('Этот хук может использоваться только с ThemeContext')
-  }
+	if (!context) {
+		throw new Error('Этот хук может использоваться только с ThemeContext');
+	}
 
-  return context;
-}
+	return context;
+};
 
 // Сам компонент
 
@@ -59,7 +59,7 @@ const Theme: React.FC<IThemeProps> = ({ children }) => {
 
 	useEffect(() => {
 		localStorage.setItem(StorageKey, theme);
-		document.documentElement.setAttribute('data-theme', theme);
+		document.body.setAttribute('data-theme', theme);
 	}, [theme]);
 
 	return (

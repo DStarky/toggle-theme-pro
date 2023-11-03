@@ -1,14 +1,14 @@
-@import 'src/styles/variables.scss';
+@import 'src/styles/themes.scss';
 
-.root{
-  background-color: $color-bg;
+.root {
+  background-color: var(--color-bg);
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.container{
+.container {
   max-width: 600px;
   width: 100%;
   padding: 30px;
@@ -17,12 +17,12 @@
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-.p{
+.p {
   font-size: 32px;
   margin: 0;
   margin-top: 20px;
 
-  span{
+  span {
     font-weight: bold;
   }
 }

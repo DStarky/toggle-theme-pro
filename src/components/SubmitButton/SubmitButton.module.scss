@@ -1,13 +1,13 @@
-@import 'src/styles/variables.scss';
+@import 'src/styles/themes.scss';
 
 .root {
   appearance: none;
-  background-color: $color-bg-white;
-  border: $border;
+  background-color: var(--color-bg-white);
+  border: var(--border);
   border-radius: 6px;
-  box-shadow: $box-shadow;
+  box-shadow: var(--box-shadow);
   box-sizing: border-box;
-  color: $color-font;
+  color: var(--color-font);
   cursor: pointer;
   display: inline-block;
   font-size: 14px;

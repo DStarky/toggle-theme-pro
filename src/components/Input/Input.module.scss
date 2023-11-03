@@ -1,15 +1,15 @@
-@import 'src/styles/variables.scss';
+@import 'src/styles/themes.scss';
 
 .root {
   padding: 6px 12px;
-  border: 1px solid $color-font;
+  border: 1px solid var(--color-font);
   border-radius: 4px;
-  color: $color-font;
+  color: var(--color-font);
   flex-grow: 1;
-  background-color: $color-bg-white;
-  border: $border;
+  background-color: var(--color-bg-white);
+  border: var(--border);
   border-radius: 6px;
-  box-shadow: $box-shadow;
+  box-shadow: var(--box-shadow);
   outline: none;
 
   &:focus::placeholder {

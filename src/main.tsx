@@ -1,11 +1,17 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
 import 'normalize.css';
-import App from './components/App/App'
-import './index.css'
+
+import './index.css';
+import 'src/styles/themes.scss';
+
+import App from './components/App/App';
+import Theme from './Theme/Theme';
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+	<React.StrictMode>
+		<Theme>
+			<App />
+		</Theme>
+	</React.StrictMode>,
+);
