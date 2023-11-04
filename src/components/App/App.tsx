@@ -23,24 +23,8 @@ const App: React.FC = () => {
 
 	return (
 		<div className={styles.root}>
-			<button
-				className={styles.toggle}
-				onClick={toggleThemeHandler}></button>
 			<div className={styles.container}>
-				<Form
-					nameHandler={nameHandler}
-					setValue={setValue}>
-					<Input
-						value={value}
-						setValue={setValue}
-					/>
-					<SubmitButton>Поздороваться</SubmitButton>
-				</Form>
-				{name && (
-					<p className={styles.p}>
-						Привет, <span>{name}</span>
-					</p>
-				)}
+				<h1 className={styles.title}>Переключатель темы</h1>
 			</div>
 		</div>
 	);
