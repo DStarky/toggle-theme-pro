@@ -1,11 +1,7 @@
-import { useTheme } from '../theme-provider';
 import styles from './App.module.scss';
 import Toggle from 'src/components/Toggle/Toggle';
 
 const App: React.FC = () => {
-
-
-
 
 	return (
 		<div className={styles.root}>
