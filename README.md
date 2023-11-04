@@ -5,9 +5,11 @@
 Скопировать папку theme-provider.
 Обернуть приложение в пользовательский компонент <Theme> из папки theme-provider
 
-`<Theme>
-			<App />
-		</Theme>`
+```
+<Theme>
+	<App />
+</Theme>
+```
 
 Хук useTheme() - возвращает три параметра
 
