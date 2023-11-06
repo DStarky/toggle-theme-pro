@@ -36,7 +36,7 @@ const getTheme = (): Themes => {
 	return theme as Themes;
 };
 
-// хук для темы - передаем текущую тему, функцию для изменения и список доступных
+// хук для темы - получить текущую тему, функцию для изменения и список доступных
 
 const useTheme = () => {
 	const context = useContext(ThemeContext);
@@ -46,6 +46,18 @@ const useTheme = () => {
 	}
 
 	return context;
+};
+
+// Если в проекте используется всего 2 темы (в большинстве случаев), то можно использовать этот хук для их переключения
+
+const useThemeToggle = () => {
+	const { theme, setTheme } = useTheme();
+
+	const toggleTheme = () => {
+		setTheme(theme === 'light' ? 'dark' : 'light');
+	};
+
+	return toggleTheme;
 };
 
 // Сам компонент
@@ -74,5 +86,5 @@ const Theme: React.FC<IThemeProps> = ({ children }) => {
 	);
 };
 
-export { useTheme };
+export { useTheme, useThemeToggle };
 export default Theme;
